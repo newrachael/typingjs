@@ -10,10 +10,21 @@ import typing from './Typing.js'
 componentDidMount() {
     //select dom object
     const myElement = document.querySelector('#myElement');
-    typing(myElement,"안녕하세요.");
+    typing(myElement,{txt: "안녕하세요. 환영합니다!", delayedStart: 200});
 }
 
 render() {
     return(<div id="myElement"></div>);
 }
+~~~~
+
+#### Options
+~~~~
+delayedStart: Time before typing starts, default value is 250 ms
+
+showCursor: show Cursor( if you set "false", cursor does not show ), default value is true
+
+txt: Typing text
+
+typeSpeed: Typing speed, Input time interval between characters, default value is 250ms
 ~~~~
