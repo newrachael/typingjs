@@ -4,7 +4,7 @@ Javascript typing effect / animation library
 
 ## usage
 #### react
-~~~~
+~~~~javascript
 import typing from './Typing.js'
 
 componentDidMount() {
